@@ -1,0 +1,51 @@
+/*
+Theme Name: PhpForWp
+Theme URI: 
+Author: the Milan
+Author URI: 
+Description: None
+Version: 1.0
+License: GNU 
+License URI: 
+Text Domain: PhpForWp
+*/
+
+body {
+  background-color: #B49AEB;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Varela Round", sans-serif;
+}
+
+h2 {
+  margin:  2rem 0 1rem;
+}
+
+a {
+  color: #564A71;
+  text-decoration: none;
+}
+
+pre {
+  background: #222;
+  padding: 10px;
+  border: 1px #777 solid;
+  color: #ededed;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+#masthead {
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+#content {
+  background: #efefef;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 5px;
+}
