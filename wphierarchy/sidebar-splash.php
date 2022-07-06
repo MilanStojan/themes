@@ -1,5 +1,5 @@
 <aside id="secondary" class="widget-area" role="complementary">
 
-<p>Sell something Milane!</p>
+  <p>Sell something major!</p>
 
 </aside>

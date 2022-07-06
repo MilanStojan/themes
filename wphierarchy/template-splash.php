@@ -1,6 +1,10 @@
-<?php get_header(); ?>
+<?php
+  // Template Name: Splash Page
+  // Template Post Type: post, page
+?>
+<?php get_header( 'splash' ); ?>
 
-  <div id="primary" class="content-area">
+  <div id="primary" class="content-area extended">
 
     <main id="main" class="site-main" role="main">
 
@@ -14,12 +18,10 @@
 
       <?php endif; ?>
 
-      <p>Template: singular.php</p>
+      <p>Template: template-splash.php</p>
 
     </main>
 
   </div>
 
-  <?php get_sidebar(); ?>
-
-<?php get_footer(); ?>
+<?php get_footer( 'splash' ); ?>

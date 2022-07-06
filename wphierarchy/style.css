@@ -1,18 +1,15 @@
 /*
-Theme Name: wphierarchy
-Author: Milan
-Author URI: https://wordpress.org/
-Description: Demo theme
-Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
-Version: 1.3
-Requires at least: 5.0
-Tested up to: 5.4
-Requires PHP: 7.0
+Theme Name: WP Hierarchy
+Author: Zac Gordon
+Author URI: https://zacgordon.com/
+Description: Demo theme for learning the WordPress Template Hierarchy
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wphierarchy
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+Lorem to the longer descriptionum.
 */
 
 body {
@@ -23,6 +20,10 @@ body {
 body.tag-50,
 body.category-9 {
   background-color: #a7ff91;
+}
+
+body.postid-1301 {
+  background-color: #AB8BED;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -45,6 +46,10 @@ h2.search-title {
 a {
   color: #494329;
   text-decoration: none;
+}
+
+#content a  {
+  text-decoration: underline;
 }
 
 pre {
@@ -163,6 +168,7 @@ footer.site-footer {
 
 article.post {
   margin-bottom: 4rem;
+  clear: both;
 }
 
 .author article.post {
@@ -181,8 +187,13 @@ article.post {
   float: right;
 }
 
-.archive article.portfolio:nth-child(even) {
+.archive article.portfolio {
   margin-right: 5%;
+}
+
+.tax a {
+  display: inline-block;
+  margin: 0 2px;
 }
 
 .form-submit input#submit,
@@ -205,6 +216,16 @@ article.post {
 #secondary {
   width: 25%;
   float: right;
+}
+
+.home #secondary {
+  width: 100%;
+  clear: both;
+}
+
+.home #secondary .widget {
+  width: 30%;
+  float: left;
 }
 
 #secondary h2 {
@@ -291,7 +312,7 @@ blockquote.right {
 	width: 33%;
 	float: right;
 }
-/* .gallery dl {}
+.gallery dl {}
 .gallery dt {}
 .gallery dd {}
 .gallery dl a {}
@@ -301,7 +322,7 @@ blockquote.right {
 .size-full {}
 .size-large {}
 .size-medium {}
-.size-thumbnail {} */
+.size-thumbnail {}
 
 
   /**
@@ -392,7 +413,7 @@ blockquote.right {
   	margin-bottom: 2.1538461538em;
   }
 
-  /* .comment-metadata a,
+  .comment-metadata a,
   .pingback .comment-edit-link {
 
   }
@@ -402,7 +423,7 @@ blockquote.right {
   .pingback .comment-edit-link:hover,
   .pingback .comment-edit-link:focus {
 
-  } */
+  }
 
   .comment-metadata .edit-link,
   .pingback .edit-link {
@@ -444,8 +465,8 @@ blockquote.right {
   	outline: 0;
   }
 
-  /* .comment-form {
-  } */
+  .comment-form {
+  }
 
   .comment-form label {
   	display: block;

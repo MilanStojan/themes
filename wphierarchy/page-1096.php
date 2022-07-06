@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <div id="primary" class="content-area">
+  <div id="primary" class="content-area extended">
 
     <main id="main" class="site-main" role="main">
 
@@ -14,12 +14,10 @@
 
       <?php endif; ?>
 
-      <p>Template: singular.php</p>
+      <p>Template: page-1096.php</p>
 
     </main>
 
   </div>
-
-  <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

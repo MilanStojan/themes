@@ -2,7 +2,9 @@
 
   <header class="entry-header">
 
-    <?php the_title( '<h1>', '</h1>' ); ?>
+    <span class="dashicons dashicons-format-<?php echo get_post_format( $post->ID ); ?>"></span>
+
+    <?php the_title( '<h2><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' ); ?>
 
   </header>
 
